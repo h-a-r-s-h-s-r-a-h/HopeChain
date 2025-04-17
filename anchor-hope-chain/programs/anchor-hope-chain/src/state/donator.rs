@@ -8,6 +8,7 @@ pub struct DonatorAccountState {
     pub donator_name: String,
     pub total_donated_amount: u32,
     pub email_of_donator: String,
+    pub current_amount_to_donate: u32,
     pub phone_of_donator: String,
     pub funded_at: i64,
 }
