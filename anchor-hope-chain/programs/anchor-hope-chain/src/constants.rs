@@ -1,1 +1,13 @@
+pub const ANCHOR_DISCRIMINATOR: usize = 8;
+pub const PUBKEY_SIZE: usize = 32;
+pub const STRING_LENGTH_PREFIX: usize = 4;
+pub const MAX_GENERATOR_NAME: usize = 20;
+pub const MAX_ID_LENGTH: usize = 20;
+pub const MAX_TOPIC_DESCRIPTION: usize = 300;
+pub const MAX_EMAIL_SIZE: usize = 50;
+pub const MAX_PHONE_SIZE: usize = 20;
+pub const U32_SIZE: usize = 4;
+pub const I64_SIZE: usize = 8;
+pub const BOOL_SIZE: usize = 1;
 pub const U64_SIZE: usize = 8;
+pub const MAX_BLESSING_MESSAGE_SIZE: usize = 100;
