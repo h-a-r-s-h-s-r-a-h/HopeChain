@@ -1,9 +1,16 @@
-use crate::{constants::*, state::DonatorAccountState};
+use crate::{constants::*, state::*};
 use anchor_lang::prelude::*;
 
 #[derive(Accounts)]
 #[instruction(fund_id:String)]
 pub struct CreateDonator<'info> {
+    #[account(
+        mut,
+        seeds=["donee".as_bytes(), fund_id.as_bytes()],
+        bump
+    )]
+    pub donee: Account<'info, DoneeAccountState>,
+
     #[account(
         init,
         seeds=["donate".as_bytes(), fund_id.as_bytes(), donator.key.as_ref()],

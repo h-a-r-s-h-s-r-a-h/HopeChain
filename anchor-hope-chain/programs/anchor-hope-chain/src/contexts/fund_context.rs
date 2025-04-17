@@ -6,7 +6,7 @@ use anchor_lang::prelude::*;
 pub struct CreateFund<'info> {
     #[account(
         init,
-        seeds=["donee".as_bytes(), fund_id.as_bytes(), fund_generator.key.as_ref()],
+        seeds=["donee".as_bytes(), fund_id.as_bytes()],
         bump,
         payer=fund_generator,
         space=DoneeAccountState::INIT_SPACE + MAX_ID_LENGTH + MAX_FUND_NAME + MAX_GENERATOR_NAME + MAX_TOPIC_DESCRIPTION + MAX_EMAIL_SIZE + MAX_PHONE_SIZE
