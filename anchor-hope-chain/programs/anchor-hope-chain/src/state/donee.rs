@@ -5,7 +5,7 @@ pub struct DoneeAccountState {
     pub fund_id: String,
     pub fund_generator: Pubkey,
     pub name_of_fund: String,
-    pub accountNo: PubKey,
+    pub account_no: Pubkey,
     pub name_of_fund_raiser: String,
     pub aadhar_no_of_fund_raiser: u64,
     pub description_of_problem: String,

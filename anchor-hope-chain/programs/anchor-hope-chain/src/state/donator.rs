@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 
 #[account]
 pub struct DonatorAccountState {
-    pub donator_pubkey: PubKey,
+    pub donator_pubkey: Pubkey,
     pub fund_id: String,
     pub blessing_message: String,
     pub donator_name: String,
