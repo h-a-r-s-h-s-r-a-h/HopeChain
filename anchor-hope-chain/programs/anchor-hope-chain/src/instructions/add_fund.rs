@@ -59,7 +59,3 @@ pub fn create_fund(
     donee.is_active = true;
     Ok(())
 }
-
-// pub total_amount_collected: u32,
-// pub created_at: i64,
-// pub is_active: bool,
